@@ -1,0 +1,13 @@
+{% extends "nyamukuru.html" %}
+{% block umutwe %}
+{{inyito}}
+{% endblock %}
+{% block igihimba %}
+<table>
+    <caption>About {{umus.first_name}} {{umus.last_name | upper}}</caption>
+    <tr><td colspan="2"><a href="/members">&lt;&lt;&lt; Back</a></td></tr>
+    <tr><th>First name</th><td>{{umus.first_name}}</td></tr>
+    <tr><th>Last name</th><td>{{umus.last_name}}</td></tr>
+    <tr><th>Email</th><td>{{umus.email}}</td></tr>
+</table>
+{% endblock %}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block umutwe %} {% endblock %}</title>
+    </head>
+    <body>
+        <header id="hejuru">UP</header>
+        {% block igihimba %}
+        {% endblock %}
+        <footer id="hasi">DOWN</footer>
+    </body>
+    <style>
+        table, th, td{
+            border: solid 1px green;
+            border-collapse: collapse;
+            text-align: center;
+        }table{
+            font-family: Calibri;
+            font-size:1.2em;
+            margin-left:10%;
+            width:80%
+        }caption{
+            font-size:1.5em;
+        }
+        #hejuru{
+            background-color:black;
+            color:lightgray;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size:1.3em;
+        }
+        #hasi{
+            background-color: green;
+            color:#FEA;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size:1.1em;
+        }
+    </style>
+</html>

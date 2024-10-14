@@ -1,0 +1,18 @@
+{% extends "nyamukuru.html" %}
+{% block umutwe %}
+    {{inyito}}
+{% endblock %}
+{% block igihimba %}
+    <table>
+            <tr><th colspan>Name</th><th>First name</th><th>Born on</th></tr>
+            <tr><td colspan="3"><a href="/">&lt;&lt;&lt; Home</a></td></tr>
+            {% for umus in abas %}
+            <tr>
+                <td>{{umus.first_name}}</td>
+                <td>{{umus.last_name | upper}}</td>
+                <td>{{umus.birth_date | date:"d/m/Y"}}</td>
+                <td><a href="details/{{umus.id}}">Details &gt;&gt;&gt;</a></td>
+            </tr>
+            {% endfor %}
+    </table>
+{% endblock %}  
